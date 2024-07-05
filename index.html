@@ -4,121 +4,240 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Falah Innovations</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar {
+      background-color: #2d3748;
+    }
+    .navbar-brand, .nav-link {
+      color: #f7fafc !important;
+    }
+    .hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  color: #f7fafc;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+    .section-heading {
+      margin-bottom: 2rem;
+    }
+    .footer {
+      background-color: #2d3748;
+      color: #f7fafc;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
 
   <!-- Navbar -->
-  <nav class="bg-green-600 p-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="#" class="text-white text-2xl font-bold">Falah Innovations</a>
-      <div class="space-x-4">
-        <a href="#about" class="text-white">About</a>
-        <a href="#services" class="text-white">Services</a>
-        <a href="#portfolio" class="text-white">Portfolio</a>
-        <a href="#contact" class="text-white">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Falah Innovations</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-green-600 text-white py-20 text-center">
-    <h1 class="text-4xl font-bold mb-4">Empowering Your Business with Innovative Solutions</h1>
-    <p class="text-lg">Web Development | Mobile Apps | Digital Marketing</p>
+  <header class="hero d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-4">Empowering Your Business with Innovative Solutions</h1>
+      <p class="lead">Web Development | Mobile Apps | Digital Marketing</p>
+    </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p class="text-lg mb-4">Falah Innovations is dedicated to providing top-notch web solutions for businesses of all sizes. Our mission is to empower our clients with the latest technology to help them succeed in the digital world.</p>
+<section id="about" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-heading mb-4">About Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Team" class="img-fluid rounded shadow-sm mb-4">
+      </div>
+      <div class="col-md-6">
+        <p class="lead">
+          At Falah Innovations, we are passionate about helping businesses of all sizes thrive in the digital era. 
+          Our mission is to deliver cutting-edge web solutions tailored to your unique needs.
+        </p>
+        <p>
+          With expertise in web development, mobile applications, and digital marketing, we empower our clients to achieve 
+          their goals and stay ahead of the competition. We believe in innovation, quality, and customer satisfaction.
+        </p>
+        <p>
+          Partner with us to transform your digital presence and drive your business forward.
+        </p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-20 bg-gray-200">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-heading mb-4">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="service-box shadow-sm p-4 bg-white rounded">
+          <div class="icon mb-3">
+            <i class="fas fa-code fa-3x text-green-600"></i>
+          </div>
+          <h3 class="service-title mb-3">Web Development</h3>
           <p>Custom websites, e-commerce solutions, and content management systems tailored to your needs.</p>
         </div>
-        <div class="bg-white p-6 shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">Mobile Apps</h3>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box shadow-sm p-4 bg-white rounded">
+          <div class="icon mb-3">
+            <i class="fas fa-mobile-alt fa-3x text-green-600"></i>
+          </div>
+          <h3 class="service-title mb-3">Mobile Apps</h3>
           <p>Android and iOS app development to take your business mobile and reach more customers.</p>
         </div>
-        <div class="bg-white p-6 shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">Digital Marketing</h3>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box shadow-sm p-4 bg-white rounded">
+          <div class="icon mb-3">
+            <i class="fas fa-bullhorn fa-3x text-green-600"></i>
+          </div>
+          <h3 class="service-title mb-3">Digital Marketing</h3>
           <p>SEO, social media management, and content creation to boost your online presence and drive traffic.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Our Portfolio</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Portfolio Item 1 -->
-        <div class="bg-white p-6 shadow-lg">
-          <!-- <img src="portfolio1.jpg" alt="Project 1" class="mb-4"> -->
-          <h3 class="text-2xl font-bold mb-2">A Book Selling Website</h3>
-          <p>
-            A website for selling books online. Users can browse books by category, add them to the cart, and make a purchase. 
-          </p>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-heading mb-4">Our Portfolio</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="img-fluid mb-3 rounded">
+          <h3 class="portfolio-title mb-2">E-Commerce Platform</h3>
+          <p>Developed a fully-featured e-commerce website with seamless payment integration and user-friendly design.</p>
         </div>
-        <!-- Portfolio Item 2 -->
-        <div class="bg-white p-6 shadow-lg">
-          <!-- <img src="portfolio2.jpg" alt="Project 2" class="mb-4"> -->
-          <h3 class="text-2xl font-bold mb-2">Pizza Delivery Website</h3>
-          <p>
-            A website for a pizza restaurant that allows users to order pizza online and have it delivered to their doorstep.
-          </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+          <img src="https://img.lovepik.com/element/45009/2763.png_860.png" alt="Project 2" class="img-fluid mb-3 rounded">
+          <h3 class="portfolio-title mb-2">Mobile Banking App</h3>
+          <p>Created a secure and intuitive mobile banking app for managing accounts, transfers, and payments on-the-go.</p>
         </div>
-        <!-- Portfolio Item 3 -->
-        <div class="bg-white p-6 shadow-lg">
-          <!-- <img src="portfolio3.jpg" alt="Project 3" class="mb-4"> -->
-          <h3 class="text-2xl font-bold mb-2">bookMyDoc</h3>
-          <p>
-            A website that allows users to book doctor appointments online and receive reminders for their appointments.
-          </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+          <img src="https://miro.medium.com/v2/resize:fit:1200/1*sk1tKUwsrliMzmkClFeDQg.jpeg" alt="Project 3" class="img-fluid mb-3 rounded">
+          <h3 class="portfolio-title mb-2">Digital Marketing Campaign</h3>
+          <p>Executed a successful digital marketing campaign that increased client’s online visibility and sales by 50%.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+          <img src="https://cdn.dribbble.com/users/5195635/screenshots/15850326/media/056693cce269f439bfc9cfd8cdaecb8b.jpg?resize=400x0" alt="Project 4" class="img-fluid mb-3 rounded">
+          <h3 class="portfolio-title mb-2">Educational Platform</h3>
+          <p>Built an interactive educational platform with courses, quizzes, and certification for online learners.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRH17a39GBN9uHcm91P3z8hZqTGoHIQHVl0w&s" alt="Project 5" class="img-fluid mb-3 rounded">
+          <h3 class="portfolio-title mb-2">Healthcare Management System</h3>
+          <p>Developed a comprehensive healthcare management system for scheduling, records, and patient management.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/a7f11629030083.55de6e7ec1446.jpg" alt="Project 6" class="img-fluid mb-3 rounded">
+          <h3 class="portfolio-title mb-2">Real Estate Website</h3>
+          <p>Designed a real estate website with property listings, virtual tours, and agent contact features.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-200">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <form class="max-w-lg mx-auto bg-white p-8 shadow-lg">
-        <div class="mb-4">
-          <label for="name" class="block text-left text-sm font-bold mb-2">Name</label>
-          <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded">
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-heading">Contact Us</h2>
+      <form class="row g-3" action="mailto:contact@falahinnovations.online" method="post" enctype="text/plain">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
         </div>
-        <div class="mb-4">
-          <label for="email" class="block text-left text-sm font-bold mb-2">Email</label>
-          <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded">
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
         </div>
-        <div class="mb-4">
-          <label for="message" class="block text-left text-sm font-bold mb-2">Message</label>
-          <textarea id="message" class="w-full p-2 border border-gray-300 rounded" rows="4"></textarea>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
         </div>
-        <button type="submit" class="bg-green-600 text-white py-2 px-4 rounded">Send Message</button>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
       </form>
+      
     </div>
-    <!-- Or Connect with us -->
-   
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-600 text-white py-4 text-center">
-    <p>&copy; 2024 Falah Innovations. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Falah Innovations. All rights reserved.</p>
+      <p>Contact us: <a href="mailto:contact@falahinnovations.online" class="underline">contact@falahinnovations.online</a></p>
+    <p>Phone: +91-6005203531</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
