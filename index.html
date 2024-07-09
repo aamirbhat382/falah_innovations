@@ -1,314 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <!-- Basic Meta Tags -->
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Falah Innovations offers top-notch web development, mobile apps, and digital marketing solutions to empower your business in the digital world.">
-   <meta name="keywords" content="web development, mobile apps, digital marketing, business solutions, Falah Innovations">
-   <meta name="author" content="Falah Innovations">
- 
-   <!-- Open Graph Meta Tags -->
-   <meta property="og:title" content="Falah Innovations">
-   <meta property="og:description" content="Empowering Your Business with Innovative Solutions. Web Development, Mobile Apps, and Digital Marketing.">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://falahinnovations.online">
-   <meta property="og:image" content="/images/og-image.jpg">
- 
-   <!-- Twitter Card Meta Tags -->
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:title" content="Falah Innovations">
-   <meta name="twitter:description" content="Empowering Your Business with Innovative Solutions. Web Development, Mobile Apps, and Digital Marketing.">
-   <meta name="twitter:image" content="/images/og-image.jpg">
- <!-- Fav Icons -->
-  <meta name="theme-color" content="#2d3748">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-   <!-- Title Tag -->
-   <title>Falah Innovations - Empowering Your Business with Innovative Solutions</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-    .navbar {
-      background-color: #2d3748;
-    }
-    .navbar-brand, .nav-link {
-      color: #f7fafc !important;
-    }
-    .hero {
-  position: relative;
-  background: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
-  color: #f7fafc;
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Falah Innovations offers top-notch web development, mobile apps, and digital marketing solutions to empower your business in the digital world."
+    />
+    <meta
+      name="keywords"
+      content="Web Development Kashmir, Mobile App Development Kashmir, Digital Marketing Kashmir, E-commerce Development Kashmir, Content Management System Kashmir, Falah Innovations, Srinagar Web Design, Jammu Web Design, Kashmir Website Development Company, Best Web Developers in Kashmir, Affordable Web Design Kashmir"
+    />
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-  z-index: 1;
-}
+    <meta name="author" content="Falah Innovations" />
 
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-    .section-heading {
-      margin-bottom: 2rem;
-    }
-    .footer {
-      background-color: #2d3748;
-      color: #f7fafc;
-      padding: 1rem 0;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Falah Innovations" />
+    <meta
+      property="og:description"
+      content="Empowering Your Business with Innovative Solutions. Web Development, Mobile Apps, and Digital Marketing."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://falahinnovations.online" />
+    <meta property="og:image" content="/images/og-image.jpg" />
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Falah Innovations</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Falah Innovations" />
+    <meta
+      name="twitter:description"
+      content="Empowering Your Business with Innovative Solutions. Web Development, Mobile Apps, and Digital Marketing."
+    />
+    <meta name="twitter:image" content="/images/og-image.jpg" />
+    <!-- Fav Icons -->
+    <meta name="theme-color" content="#2d3748" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- Title Tag -->
+    <title>
+      Falah Innovations - Empowering Your Business with Innovative Solutions
+    </title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .navbar {
+        background-color: #2d3748;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #f7fafc !important;
+      }
+      .hero {
+        position: relative;
+        background: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          no-repeat center center/cover;
+        color: #f7fafc;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        z-index: 1;
+      }
+
+      .hero .container {
+        position: relative;
+        z-index: 2;
+      }
+      .section-heading {
+        margin-bottom: 2rem;
+      }
+      .footer {
+        background-color: #2d3748;
+        color: #f7fafc;
+        padding: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Falah Innovations</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <header class="hero d-flex align-items-center">
-    <div class="container">
-      <h1 class="display-4">Empowering Your Business with Innovative Solutions</h1>
-      <p class="lead">Web Development | Mobile Apps | Digital Marketing</p>
-    </div>
-  </header>
-
-  <!-- About Section -->
-<section id="about" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="section-heading mb-4">About Us</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Team" class="img-fluid rounded shadow-sm mb-4">
-      </div>
-      <div class="col-md-6">
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center">
+      <div class="container">
+        <h1 class="display-4">Grow Your Business Online</h1>
         <p class="lead">
-          At Falah Innovations, we are passionate about helping businesses of all sizes thrive in the digital era. 
-          Our mission is to deliver cutting-edge web solutions tailored to your unique needs.
+          Get results with our award-winning web development, mobile app
+          development, and digital marketing services.
         </p>
+        <a href="#contact" class="btn btn-success btn-lg">Get a Free Consultation </a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-heading mb-4">About Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./images/team_photo.jpeg"
+              alt="Our Team"
+              class="img-fluid rounded shadow-sm mb-4"
+            />
+          </div>
+          <div class="col-md-6">
+            
+            <p class="lead">
+              Hi there! I'm Aamir Hussain, founder of Falah Innovations. We're a passionate team based in Kashmir with a deep understanding of the local market. We're dedicated to helping businesses of all sizes in Kashmir thrive online. 
+            </p>
+            <p>
+              With expertise in web development, mobile app development, and digital marketing, we create custom solutions that cater to your specific needs and goals. We believe in innovation, quality, and building long-term partnerships with our clients. 
+            </p>
+            <p>
+              Partner with Falah Innovations to transform your digital presence and achieve your business goals in the competitive Kashmir market.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-heading mb-4">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="service-box shadow-sm p-4 bg-white rounded">
+              <div class="icon mb-3">
+                <i class="fas fa-code fa-3x text-green-600"></i>
+              </div>
+              <h3 class="service-title mb-3">Web Development</h3>
+              <p>
+                Custom websites designed for the Kashmir market. We create e-commerce solutions and content management systems tailored to your specific needs and help you reach your target audience in Kashmir.
+              </p>
+              <a href="#contact" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="service-box shadow-sm p-4 bg-white rounded">
+              <div class="icon mb-3">
+                <i class="fas fa-mobile-alt fa-3x text-green-600"></i>
+              </div>
+              <h3 class="service-title mb-3">Mobile Apps</h3>
+              <p>
+                Android and iOS app development to take your business mobile and reach more customers in Kashmir. We create user-friendly apps that will help you stand out in the local market.
+              </p>
+              <a href="#contact" class="btn btn-primary">Get a Quote</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-box shadow-sm p-4 bg-white rounded">
+              <div class="icon mb-3">
+                <i class="fas fa-bullhorn fa-3x text-green-600"></i>
+              </div>
+              <h3 class="service-title mb-3">Digital Marketing</h3>
+              <p>
+                SEO, social media management, and content creation tailored to the Kashmir market to boost your online presence and drive traffic.  We'll help you develop a digital marketing strategy that reaches your target audience and achieves your business goals in Kashmir.
+              </p>
+              <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section --> 
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-heading mb-4">Our Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+              <img
+                src="./images/ecommerace.jpeg"
+                alt="E-Commerce Platform"
+                class="img-fluid mb-3 rounded"
+              />
+              <h3 class="portfolio-title mb-2">
+                Kashmir Handicrafts E-Commerce
+              </h3>
+              <p>
+                Developed a comprehensive e-commerce website for a leading
+                Kashmiri handicrafts business, featuring seamless payment
+                integration and a user-friendly interface.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+              <img
+                src="./images/banking.webp"
+                alt="Mobile Banking App"
+                class="img-fluid mb-3 rounded"
+              />
+              <h3 class="portfolio-title mb-2">
+                Mobile Banking App for J&K Bank
+              </h3>
+              <p>
+                Created a secure and intuitive mobile banking app for a local
+                Kashmiri bank, enabling customers to manage accounts, transfers,
+                and payments on-the-go.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+              <img
+                src="./images/tourism.jpg"
+                alt="Digital Marketing Campaign"
+                class="img-fluid mb-3 rounded"
+              />
+              <h3 class="portfolio-title mb-2">Tourism Digital Marketing</h3>
+              <p>
+                Executed a successful digital marketing campaign for a local
+                Kashmiri tourism company, significantly increasing online
+                visibility and bookings.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+              <img
+                src="./images/learning.jpg"
+                alt="Educational Platform"
+                class="img-fluid mb-3 rounded"
+              />
+              <h3 class="portfolio-title mb-2">Interactive E-Learning</h3>
+              <p>
+                Built an interactive educational platform for a Kashmiri
+                e-learning startup, featuring courses, quizzes, and
+                certification for online learners.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+              <img
+                src="./images/health.jpg"
+                alt="Healthcare Management System"
+                class="img-fluid mb-3 rounded"
+              />
+              <h3 class="portfolio-title mb-2">Healthcare Management System</h3>
+              <p>
+                Developed a comprehensive healthcare management system for a
+                Kashmiri hospital, improving scheduling, records, and patient
+                management.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item shadow-sm p-4 bg-white rounded">
+              <img
+                src="./images/realestated.webp"
+                alt="Real Estate Website"
+                class="img-fluid mb-3 rounded"
+              />
+              <h3 class="portfolio-title mb-2">
+                Real Estate Website for Kashmir Realty
+              </h3>
+              <p>
+                Designed a real estate website for a prominent Kashmiri real
+                estate agency, featuring property listings, virtual tours, and
+                agent contact features.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+  
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-heading mb-4">Testimonials</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="testimonial-box shadow-sm p-4 bg-white rounded">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"  alt="Client Image"
+                class="img-fluid rounded-circle mb-3"
+                width="80"
+                height="80"
+              />
+              <p class="text-lg text-gray-800">
+                "Falah Innovations developed a user-friendly mobile app that increased our in-app purchases by 20%. They were professional, responsive, and delivered the project on time and within budget."
+              </p>
+              <p class="mt-4 text-sm text-gray-600">
+                - Amina Khan, CEO of Kashmir Crafts
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="testimonial-box shadow-sm p-4 bg-white rounded">
+              <img
+                src="https://randomuser.me/api/portraits/women/50.jpg"  alt="Client Image"
+                class="img-fluid rounded-circle mb-3"
+                width="80"
+                height="80"
+              />
+              <p class="text-lg text-gray-800">
+                "Their team delivered an amazing SEO campaign that significantly improved our website ranking and organic traffic. We've seen a 30% increase in website leads since working with Falah Innovations."
+              </p>
+              <p class="mt-4 text-sm text-gray-600">
+                - Zara Khan, Marketing Manager at Himalayan Delights
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="testimonial-box shadow-sm p-4 bg-white rounded">
+              <img
+                src="https://randomuser.me/api/portraits/men/65.jpg"  alt="Client Image"
+                class="img-fluid rounded-circle mb-3"
+                width="80"
+                height="80"
+              />
+              <p class="text-lg text-gray-800">
+                "Falah Innovations provided exceptional service throughout the development of our e-commerce platform. They were attentive to our needs, offered valuable insights, and delivered a user-friendly website that has helped us expand our online customer base in Kashmir."
+              </p>
+              <p class="mt-4 text-sm text-gray-600">
+                - Bilal Ahmed, Founder of Valley Nuts & Spices
+              </p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-heading">Contact Us</h2>
+        <p class="py-3">Feel free to reach out using the form below or call us directly at +91-6005203531.</p>
+        <form class="row g-3" action="mailto:contact@falahinnovations.online" method="post" enctype="text/plain">
+          <div class="col-md-4">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required />
+          </div>
+          <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="col-md-4">
+            <label for="subject" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="subject" name="Phone" required />
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Falah Innovations. All rights reserved.</p>
         <p>
-          With expertise in web development, mobile applications, and digital marketing, we empower our clients to achieve 
-          their goals and stay ahead of the competition. We believe in innovation, quality, and customer satisfaction.
+          Contact us:
+          <a href="mailto:contact@falahinnovations.online" class="underline">contact@falahinnovations.online</a>
         </p>
-        <p>
-          Partner with us to transform your digital presence and drive your business forward.
-        </p>
+        <p>Phone: +91-6005203531</p>
+        <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+          <li class="ms-3">
+            <a href="https://www.facebook.com/falahinnovations" class="text-dark">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://www.instagram.com/falah_innovations" class="text-light">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+          </ul>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
+    
 
-
-<!-- Services Section -->
-<section id="services" class="py-5">
-  <div class="container text-center">
-    <h2 class="section-heading mb-4">Our Services</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="service-box shadow-sm p-4 bg-white rounded">
-          <div class="icon mb-3">
-            <i class="fas fa-code fa-3x text-green-600"></i>
-          </div>
-          <h3 class="service-title mb-3">Web Development</h3>
-          <p>Custom websites, e-commerce solutions, and content management systems tailored to your needs.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="service-box shadow-sm p-4 bg-white rounded">
-          <div class="icon mb-3">
-            <i class="fas fa-mobile-alt fa-3x text-green-600"></i>
-          </div>
-          <h3 class="service-title mb-3">Mobile Apps</h3>
-          <p>Android and iOS app development to take your business mobile and reach more customers.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="service-box shadow-sm p-4 bg-white rounded">
-          <div class="icon mb-3">
-            <i class="fas fa-bullhorn fa-3x text-green-600"></i>
-          </div>
-          <h3 class="service-title mb-3">Digital Marketing</h3>
-          <p>SEO, social media management, and content creation to boost your online presence and drive traffic.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Section -->
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="section-heading mb-4">Our Portfolio</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
-          <img src="./images/ecommerace.jpeg" alt="E-Commerce Platform" class="img-fluid mb-3 rounded">
-          <h3 class="portfolio-title mb-2">Kashmir Handicrafts E-Commerce</h3>
-          <p>Developed a comprehensive e-commerce website for a leading Kashmiri handicrafts business, featuring seamless payment integration and a user-friendly interface.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
-          <img src="./images/banking.webp" alt="Mobile Banking App" class="img-fluid mb-3 rounded">
-          <h3 class="portfolio-title mb-2">Mobile Banking App for J&K Bank</h3>
-          <p>Created a secure and intuitive mobile banking app for a local Kashmiri bank, enabling customers to manage accounts, transfers, and payments on-the-go.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
-          <img src="./images/tourism.jpg" alt="Digital Marketing Campaign" class="img-fluid mb-3 rounded">
-          <h3 class="portfolio-title mb-2">Tourism Digital Marketing</h3>
-          <p>Executed a successful digital marketing campaign for a local Kashmiri tourism company, significantly increasing online visibility and bookings.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
-          <img src="./images/learning.jpg" alt="Educational Platform" class="img-fluid mb-3 rounded">
-          <h3 class="portfolio-title mb-2">Interactive E-Learning</h3>
-          <p>Built an interactive educational platform for a Kashmiri e-learning startup, featuring courses, quizzes, and certification for online learners.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
-          <img src="./images/health.jpg" alt="Healthcare Management System" class="img-fluid mb-3 rounded">
-          <h3 class="portfolio-title mb-2">Healthcare Management System</h3>
-          <p>Developed a comprehensive healthcare management system for a Kashmiri hospital, improving scheduling, records, and patient management.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="portfolio-item shadow-sm p-4 bg-white rounded">
-          <img src="./images/realestated.webp" alt="Real Estate Website" class="img-fluid mb-3 rounded">
-          <h3 class="portfolio-title mb-2">Real Estate Website for Kashmir Realty</h3>
-          <p>Designed a real estate website for a prominent Kashmiri real estate agency, featuring property listings, virtual tours, and agent contact features.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="section-heading mb-4">Testimonials</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="testimonial-box shadow-sm p-4 bg-white rounded">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Image" class="img-fluid rounded-circle mb-3" width="80" height="80">
-          <p class="text-lg text-gray-800">"Falah Innovations gave us a stunning website that reflects our Kashmiri heritage beautifully."</p>
-          <p class="mt-4 text-sm text-gray-600">- Adil Khan, Owner of Pashmina Crafts</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="testimonial-box shadow-sm p-4 bg-white rounded">
-          <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Client Image" class="img-fluid rounded-circle mb-3" width="80" height="80">
-          <p class="text-lg text-gray-800">"Their team delivered an amazing mobile app that boosted our business in the valley."</p>
-          <p class="mt-4 text-sm text-gray-600">- Zainab Mir, Marketing Manager at Kashmir Valley Products</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="testimonial-box shadow-sm p-4 bg-white rounded">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Client Image" class="img-fluid rounded-circle mb-3" width="80" height="80">
-          <p class="text-lg text-gray-800">"Professional and reliable service, highly recommended for any Kashmiri business."</p>
-          <p class="mt-4 text-sm text-gray-600">- Imran Shah, Founder of Saffron Delight</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="testimonial-box shadow-sm p-4 bg-white rounded">
-          <img src="https://randomuser.me/api/portraits/women/83.jpg" alt="Client Image" class="img-fluid rounded-circle mb-3" width="80" height="80">
-          <p class="text-lg text-gray-800">"The digital marketing strategy they created for us resulted in a significant increase in online engagement."</p>
-          <p class="mt-4 text-sm text-gray-600">- Sameena Bhat, Owner of Handloom Treasures</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="testimonial-box shadow-sm p-4 bg-white rounded">
-          <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Client Image" class="img-fluid rounded-circle mb-3" width="80" height="80">
-          <p class="text-lg text-gray-800">"Their expertise in web development helped us create a robust e-commerce platform that our customers love."</p>
-          <p class="mt-4 text-sm text-gray-600">- Bashir Ahmed, CEO of Kashmiri Spices</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-heading">Contact Us</h2>
-      <form class="row g-3" action="mailto:contact@falahinnovations.online" method="post" enctype="text/plain">
-        <div class="col-md-6">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="col-md-6">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="col-12">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </div>
-      </form>
-      
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Falah Innovations. All rights reserved.</p>
-      <p>Contact us: <a href="mailto:contact@falahinnovations.online" class="underline">contact@falahinnovations.online</a></p>
-    <p>Phone: +91-6005203531</p>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
